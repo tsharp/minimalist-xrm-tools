@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>DynamicsCrm.TestFramework</id>
+    <version>0.0.7</version>
+    <authors>Travis Sharp</authors>
+    <owners>furiousscissors, tsharp</owners>
+    <licenseUrl>https://github.com/tsharp/crm-ninja/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/tsharp/crm-ninja</projectUrl>
+    <!-- <iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl> -->
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>An Extensible Dynamics CRM Testing Framework</description>
+    <releaseNotes>
+      * Updated CrmSdk to use 8.2.0.2
+	  * Updated Serilog to use 8.2.0.2
+	  * Sdk is no longer dependent on crm tooling
+	  * Removed Serilog Dependency and Replaced with LibLog
+    </releaseNotes>
+    <copyright>Copyright (C) Travis Sharp 2017</copyright>
+    <tags>test testing framework dynamics-crm dynamics crm</tags>
+    <dependencies>
+      <dependency id="Microsoft.CrmSdk.CoreAssemblies" version="8.2.0.2" />
+      <dependency id="CsvHelper" version="2.16.3" />
+    </dependencies>
+  </metadata>
+
+  <files>
+    <!-- Include everything in \build -->
+    <file src="out\DynamicsCrm.TestFramework\**" target="lib" />
+  </files>
+</package>
