@@ -9,7 +9,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "McTools.Xrm.Connection", "M
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "McTools.Xrm.Connection.WinForms", "McTools.Xrm.Connection.WinForms\McTools.Xrm.Connection.WinForms.csproj", "{EEB5C09F-CEC6-4FB5-87B5-AE61AE89C9EB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EpicXrm.TestFramework", "EpicXrm.TestFramework\EpicXrm.TestFramework.csproj", "{6699B654-89AF-4E0C-B7AA-51F095920230}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "FakeXrmEasy.Shared", "third_party\FakeXrmEasy.Shared\FakeXrmEasy.Shared.shproj", "{D659CC6B-7192-4236-AE49-92881F9BE563}"
+EndProject
 Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		third_party\FakeXrmEasy.Shared\FakeXrmEasy.Shared.projitems*{6699b654-89af-4e0c-b7aa-51f095920230}*SharedItemsImports = 4
+		third_party\FakeXrmEasy.Shared\FakeXrmEasy.Shared.projitems*{d659cc6b-7192-4236-ae49-92881f9be563}*SharedItemsImports = 13
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug Without GemBox|Any CPU = Debug Without GemBox|Any CPU
 		Debug|Any CPU = Debug|Any CPU
@@ -34,6 +42,12 @@ Global
 		{EEB5C09F-CEC6-4FB5-87B5-AE61AE89C9EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EEB5C09F-CEC6-4FB5-87B5-AE61AE89C9EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EEB5C09F-CEC6-4FB5-87B5-AE61AE89C9EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6699B654-89AF-4E0C-B7AA-51F095920230}.Debug Without GemBox|Any CPU.ActiveCfg = Debug|Any CPU
+		{6699B654-89AF-4E0C-B7AA-51F095920230}.Debug Without GemBox|Any CPU.Build.0 = Debug|Any CPU
+		{6699B654-89AF-4E0C-B7AA-51F095920230}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6699B654-89AF-4E0C-B7AA-51F095920230}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6699B654-89AF-4E0C-B7AA-51F095920230}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6699B654-89AF-4E0C-B7AA-51F095920230}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
