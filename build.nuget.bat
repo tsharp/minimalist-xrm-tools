@@ -1,1 +1,1 @@
-nuget pack DynamicsCrm.TestFramework.nuspec
+nuget pack EpicXrm.TestFramework.nuspec
