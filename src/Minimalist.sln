@@ -13,13 +13,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EpicXrm.TestFramework.Sdk",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EpicXrm.TestFramework.Automation", "EpicXrm.TestFramework.Automation\EpicXrm.TestFramework.Automation.csproj", "{412C2FCB-7A00-44A7-81FF-CE540F5AA644}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EpicXrm.TestFramework.CodeGenerator", "EpicXrm.TestFramework.CodeGenerator\EpicXrm.TestFramework.CodeGenerator.csproj", "{D86C663A-8FAC-46B8-A1D2-34EC8EF1F67F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EpicXrm.TestFramework.CodeGenerator", "EpicXrm.TestFramework.CodeGenerator\EpicXrm.TestFramework.CodeGenerator.csproj", "{789F6A6B-5C16-41B5-B46D-3E3A8EFC7A1D}"
 EndProject
 Global
-	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		third_party\FakeXrmEasy.Shared\FakeXrmEasy.Shared.projitems*{6699b654-89af-4e0c-b7aa-51f095920230}*SharedItemsImports = 4
-		third_party\FakeXrmEasy.Shared\FakeXrmEasy.Shared.projitems*{d659cc6b-7192-4236-ae49-92881f9be563}*SharedItemsImports = 13
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug Without GemBox|Any CPU = Debug Without GemBox|Any CPU
 		Debug|Any CPU = Debug|Any CPU
@@ -56,12 +52,12 @@ Global
 		{412C2FCB-7A00-44A7-81FF-CE540F5AA644}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{412C2FCB-7A00-44A7-81FF-CE540F5AA644}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{412C2FCB-7A00-44A7-81FF-CE540F5AA644}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D86C663A-8FAC-46B8-A1D2-34EC8EF1F67F}.Debug Without GemBox|Any CPU.ActiveCfg = Debug|Any CPU
-		{D86C663A-8FAC-46B8-A1D2-34EC8EF1F67F}.Debug Without GemBox|Any CPU.Build.0 = Debug|Any CPU
-		{D86C663A-8FAC-46B8-A1D2-34EC8EF1F67F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D86C663A-8FAC-46B8-A1D2-34EC8EF1F67F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D86C663A-8FAC-46B8-A1D2-34EC8EF1F67F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D86C663A-8FAC-46B8-A1D2-34EC8EF1F67F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{789F6A6B-5C16-41B5-B46D-3E3A8EFC7A1D}.Debug Without GemBox|Any CPU.ActiveCfg = Debug|Any CPU
+		{789F6A6B-5C16-41B5-B46D-3E3A8EFC7A1D}.Debug Without GemBox|Any CPU.Build.0 = Debug|Any CPU
+		{789F6A6B-5C16-41B5-B46D-3E3A8EFC7A1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{789F6A6B-5C16-41B5-B46D-3E3A8EFC7A1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{789F6A6B-5C16-41B5-B46D-3E3A8EFC7A1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{789F6A6B-5C16-41B5-B46D-3E3A8EFC7A1D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

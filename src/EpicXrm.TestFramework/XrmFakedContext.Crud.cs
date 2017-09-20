@@ -239,7 +239,7 @@ namespace EpicXrm.TestFramework.Sdk
         #region Other protected methods
         protected void EnsureEntityNameExistsInMetadata(string sEntityName)
         {
-            if (Relationships.Values.Any(value => new[] { value.Entity1LogicalName, value.Entity2LogicalName, value.IntersectEntity }.Contains(sEntityName, StringComparer.InvariantCultureIgnoreCase)))
+            if (Relationships.Values.Any(value => new[] { value.Entity1LogicalName, value.Entity2LogicalName, value.SchemaName }.Contains(sEntityName, StringComparer.InvariantCultureIgnoreCase)))
             {
                 return;
             }
@@ -442,7 +442,7 @@ namespace EpicXrm.TestFramework.Sdk
 
         protected internal bool AttributeExistsInMetadata(string sEntityName, string sAttributeName)
         {
-            var relationships = this.Relationships.Values.Where(value => new[] { value.Entity1LogicalName, value.Entity2LogicalName, value.IntersectEntity }.Contains(sEntityName, StringComparer.InvariantCultureIgnoreCase)).ToArray();
+            var relationships = this.Relationships.Values.Where(value => new[] { value.Entity1LogicalName, value.Entity2LogicalName, value.SchemaName }.Contains(sEntityName, StringComparer.InvariantCultureIgnoreCase)).ToArray();
             if (relationships.Any(e => e.Entity1Attribute == sAttributeName || e.Entity2Attribute == sAttributeName))
             {
                 return true;

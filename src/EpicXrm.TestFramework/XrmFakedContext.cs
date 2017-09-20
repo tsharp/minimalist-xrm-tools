@@ -162,9 +162,17 @@ namespace EpicXrm.TestFramework.Sdk
                 GenericFakeMessageExecutors.Remove(message);
         }
 
-        public void AddRelationship(string schemaname, XrmFakedRelationship relationship)
+        public void AddRelationship(XrmFakedRelationship relationship)
         {
-            Relationships.Add(schemaname, relationship);
+            Relationships.Add(relationship.SchemaName, relationship);
+        }
+
+        public void AddRelationships(params XrmFakedRelationship[] relationships)
+        {
+            foreach (var relationship in relationships)
+            {
+                AddRelationship(relationship);
+            }
         }
 
         public void RemoveRelationship(string schemaname)

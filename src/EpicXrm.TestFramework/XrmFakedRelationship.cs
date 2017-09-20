@@ -3,9 +3,9 @@
     public class XrmFakedRelationship
     {
         /// <summary>
-        /// Schema name of the many to many intersect entity
+        /// Schema name of the many to many intersect entity or one to many relationship
         /// </summary>
-        public string IntersectEntity { get; set; }
+        public string SchemaName { get; set; }
 
         /// <summary>
         /// Entity name and attribute of the first entity participating in the relationship
@@ -44,7 +44,7 @@
         /// <param name="entity2LogicalName"></param>
         public XrmFakedRelationship(string entityName, string entity1Attribute, string entity2Attribute, string entity1LogicalName, string entity2LogicalName)
         {
-            IntersectEntity = entityName;
+            SchemaName = entityName;
             Entity1Attribute = entity1Attribute;
             Entity2Attribute = entity2Attribute;
             Entity1LogicalName = entity1LogicalName;

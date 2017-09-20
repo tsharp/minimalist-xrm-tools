@@ -86,7 +86,7 @@ namespace EpicXrm.TestFramework.Sdk.FakeMessageExecutors
                             LinkFromAttributeName = linkAttributeName,
                             LinkFromEntityName = retrieveRelatedEntitiesQuery.EntityName,
                             LinkToAttributeName = linkAttributeName,
-                            LinkToEntityName = fakeRelationship.IntersectEntity,
+                            LinkToEntityName = fakeRelationship.SchemaName,
                             LinkCriteria = new FilterExpression
                             {
                                 Conditions =

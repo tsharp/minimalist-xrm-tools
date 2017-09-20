@@ -67,7 +67,7 @@ namespace EpicXrm.TestFramework.Sdk.FakeMessageExecutors
                         throw new Exception(string.Format("{0} with Id {1} doesn't exist", toEntityName, relatedEntityReference.Id.ToString()));
                     }
 
-                    var association = new Entity(fakeRelationShip.IntersectEntity)
+                    var association = new Entity(fakeRelationShip.SchemaName)
                     {
                         Attributes = new AttributeCollection
                         {

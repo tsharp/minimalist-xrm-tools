@@ -44,7 +44,7 @@ namespace EpicXrm.TestFramework.Sdk.FakeMessageExecutors
                 var fromAttribute = isFrom1to2 ? relationShip.Entity1Attribute : relationShip.Entity2Attribute;
                 var toAttribute = isFrom1to2 ? relationShip.Entity2Attribute : relationShip.Entity1Attribute;
 
-                var query = new QueryExpression(relationShip.IntersectEntity)
+                var query = new QueryExpression(relationShip.SchemaName)
                 {
                     ColumnSet = new ColumnSet(true),
                     Criteria = new FilterExpression(LogicalOperator.And)
@@ -59,7 +59,7 @@ namespace EpicXrm.TestFramework.Sdk.FakeMessageExecutors
 
                 if (results.Entities.Count == 1)
                 {
-                    service.Delete(relationShip.IntersectEntity, results.Entities.First().Id);
+                    service.Delete(relationShip.SchemaName, results.Entities.First().Id);
                 }
             }
 
